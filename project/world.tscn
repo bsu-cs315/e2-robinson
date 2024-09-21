@@ -1,9 +1,10 @@
-[gd_scene load_steps=8 format=4 uid="uid://c13125k13ycox"]
+[gd_scene load_steps=9 format=4 uid="uid://c13125k13ycox"]
 
 [ext_resource type="Script" path="res://world.gd" id="1_smhmp"]
 [ext_resource type="Texture2D" uid="uid://x1vr0pfufknm" path="res://assets/tilesheet_complete.png" id="1_womtf"]
 [ext_resource type="PackedScene" uid="uid://bust4ctp8hydm" path="res://player/player.tscn" id="2_4ngpd"]
 [ext_resource type="Texture2D" uid="uid://dhlduwhigbks6" path="res://assets/set1_hills.png" id="2_07krc"]
+[ext_resource type="PackedScene" uid="uid://rpf5l04vlvs1" path="res://jewel/jewel.tscn" id="5_or34m"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_v62an"]
 texture = ExtResource("1_womtf")
@@ -70,4 +71,16 @@ position = Vector2(-312, 776)
 position = Vector2(888, 256)
 shape = SubResource("RectangleShape2D_so0ha")
 
+[node name="Jewel" parent="." instance=ExtResource("5_or34m")]
+position = Vector2(512, 416)
+
+[node name="Jewel2" parent="." instance=ExtResource("5_or34m")]
+position = Vector2(672, 216)
+
+[node name="Jewel3" parent="." instance=ExtResource("5_or34m")]
+position = Vector2(200, 40)
+
 [connection signal="body_entered" from="DeathArea" to="Player" method="_on_death_area_body_entered"]
+[connection signal="add_score" from="Jewel" to="Player" method="_on_jewel_add_score"]
+[connection signal="add_score" from="Jewel2" to="Player" method="_on_jewel_add_score"]
+[connection signal="add_score" from="Jewel3" to="Player" method="_on_jewel_add_score"]
