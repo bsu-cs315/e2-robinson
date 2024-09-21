@@ -2,9 +2,9 @@
 
 [ext_resource type="Script" path="res://world.gd" id="1_smhmp"]
 [ext_resource type="Texture2D" uid="uid://x1vr0pfufknm" path="res://assets/tilesheet_complete.png" id="1_womtf"]
-[ext_resource type="Texture2D" uid="uid://b4rrvu1lby4mu" path="res://assets/set2_background.png" id="1_xjw1l"]
 [ext_resource type="PackedScene" uid="uid://bust4ctp8hydm" path="res://player/player.tscn" id="2_4ngpd"]
 [ext_resource type="Texture2D" uid="uid://dhlduwhigbks6" path="res://assets/set1_hills.png" id="2_07krc"]
+[ext_resource type="Texture2D" uid="uid://b4rrvu1lby4mu" path="res://assets/set2_background.png" id="2_jheyd"]
 [ext_resource type="PackedScene" uid="uid://rpf5l04vlvs1" path="res://jewel/jewel.tscn" id="5_or34m"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_v62an"]
@@ -46,21 +46,29 @@ size = Vector2(1658, 248)
 [node name="World" type="Node2D"]
 script = ExtResource("1_smhmp")
 
-[node name="Background" type="Sprite2D" parent="."]
-position = Vector2(576, 324)
-scale = Vector2(1.8, 1.35)
-texture = ExtResource("1_xjw1l")
+[node name="Background" type="Node2D" parent="."]
 
-[node name="Hills" type="Node2D" parent="."]
+[node name="Sky" type="Parallax2D" parent="Background"]
+scale = Vector2(1.92, 2.04)
+scroll_scale = Vector2(0.1, 0.1)
+repeat_size = Vector2(1152, 648)
+follow_viewport = false
 
-[node name="Hills" type="Sprite2D" parent="Hills"]
+[node name="SkySprite" type="Sprite2D" parent="Background/Sky"]
+scale = Vector2(2.96274, 1.58905)
+texture = ExtResource("2_jheyd")
+centered = false
+
+[node name="Hills" type="Parallax2D" parent="Background"]
+scroll_scale = Vector2(0.05, 0)
+follow_viewport = false
+
+[node name="HillsSprite" type="Sprite2D" parent="Background/Hills"]
 position = Vector2(320, 240)
 texture = ExtResource("2_07krc")
 
-[node name="Hills2" type="Sprite2D" parent="Hills"]
-position = Vector2(904, 344)
-rotation = 3.14159
-scale = Vector2(1, -1)
+[node name="HillsSprite2" type="Sprite2D" parent="Background/Hills"]
+position = Vector2(792, 240)
 texture = ExtResource("2_07krc")
 
 [node name="TileMapLayer" type="TileMapLayer" parent="."]
@@ -114,3 +122,5 @@ position = Vector2(337, 424)
 [connection signal="add_score" from="Jewel5" to="Player" method="_on_jewel_add_score"]
 [connection signal="add_score" from="Jewel6" to="Player" method="_on_jewel_add_score"]
 [connection signal="add_score" from="Jewel7" to="Player" method="_on_jewel_add_score"]
+
+[editable path="Player"]
