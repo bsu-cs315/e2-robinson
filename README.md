@@ -16,7 +16,9 @@ Esc: Quit game
 
 ## Third-Party Assets
 
-All assets from [Kenney's Abstract Platformer Pack](https://www.kenney.nl/assets/abstract-platformer), licensed under [CC0](https://creativecommons.org/publicdomain/zero/1.0/).
+Sprites from [Kenney's Abstract Platformer Pack](https://www.kenney.nl/assets/abstract-platformer), licensed under [CC0](https://creativecommons.org/publicdomain/zero/1.0/).
+
+Jewel collection sound from [Retro, Coin 06.wav](https://freesound.org/people/MATRIXXX_/sounds/515736/) by [MATRIXXX_](https://freesound.org/people/MATRIXXX_/), licensed under [CC0](https://creativecommons.org/publicdomain/zero/1.0/).
 
 ## Report
 
