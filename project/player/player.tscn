@@ -1,4 +1,4 @@
-[gd_scene load_steps=12 format=3 uid="uid://bust4ctp8hydm"]
+[gd_scene load_steps=13 format=3 uid="uid://bust4ctp8hydm"]
 
 [ext_resource type="Script" path="res://player/player.gd" id="1_cp08k"]
 [ext_resource type="Texture2D" uid="uid://d8xl7sawluan" path="res://player/player_sprites/playerRed_walk1.png" id="2_v87d7"]
@@ -62,6 +62,9 @@ animations = [{
 [sub_resource type="LabelSettings" id="LabelSettings_wgmdk"]
 font_size = 48
 
+[sub_resource type="LabelSettings" id="LabelSettings_8w62u"]
+font_size = 48
+
 [node name="Player" type="CharacterBody2D"]
 script = ExtResource("1_cp08k")
 
@@ -95,3 +98,18 @@ offset_right = 211.0
 offset_bottom = 67.0
 text = "Jewels: 0"
 label_settings = SubResource("LabelSettings_wgmdk")
+
+[node name="Win" type="Label" parent="UI"]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -20.0
+offset_top = -128.0
+offset_right = 20.0
+offset_bottom = -61.0
+grow_horizontal = 2
+grow_vertical = 2
+label_settings = SubResource("LabelSettings_8w62u")
