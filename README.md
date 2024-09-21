@@ -7,8 +7,11 @@ An exercise for CS315 that demonstrates Kinetic motion. This is done with a Char
 Press "Play" to start the game.
 
 A: Run left
+
 D: Run right
+
 Space: Jump
+
 Esc: Quit game
 
 ## Third-Party Assets
