@@ -1,6 +1,5 @@
-[gd_scene load_steps=10 format=4 uid="uid://c13125k13ycox"]
+[gd_scene load_steps=9 format=4 uid="uid://c13125k13ycox"]
 
-[ext_resource type="Script" path="res://world.gd" id="1_smhmp"]
 [ext_resource type="Texture2D" uid="uid://x1vr0pfufknm" path="res://assets/tilesheet_complete.png" id="1_womtf"]
 [ext_resource type="PackedScene" uid="uid://bust4ctp8hydm" path="res://player/player.tscn" id="2_4ngpd"]
 [ext_resource type="Texture2D" uid="uid://dhlduwhigbks6" path="res://assets/set1_hills.png" id="2_07krc"]
@@ -45,7 +44,6 @@ size = Vector2(1658, 248)
 
 [node name="World" type="Node2D"]
 texture_filter = 1
-script = ExtResource("1_smhmp")
 
 [node name="Background" type="Node2D" parent="."]
 

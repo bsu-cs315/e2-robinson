@@ -4,6 +4,8 @@ An exercise for CS315 that demonstrates Kinetic motion. This is done with a Char
 
 ## How to play
 
+Click [here](https://bsu-cs315.github.io/e2-robinson/) to launch the game.
+
 Press "Play" to start the game.
 
 A: Run left
@@ -11,8 +13,6 @@ A: Run left
 D: Run right
 
 Space: Jump
-
-Esc: Quit game
 
 ## Third-Party Assets
 
