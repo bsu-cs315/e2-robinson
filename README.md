@@ -22,4 +22,12 @@ Jewel collection sound from [Retro, Coin 06.wav](https://freesound.org/people/MA
 
 ## Report
 
-TO-DO
+All essential goals for increment 1 are met with this project.
+
+There is a core gameplay loop with a start and end, with the start being pressing "play" and the end being collecting all 7 jewels.
+
+The game doesn't produce any warnings or errors and complies with the style guide.
+
+I have legal rights to use all assets incorporated.
+
+Has a version release.

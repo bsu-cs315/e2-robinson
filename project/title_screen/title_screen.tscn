@@ -12,26 +12,26 @@ length = 0.001
 tracks/0/type = "value"
 tracks/0/imported = false
 tracks/0/enabled = true
-tracks/0/path = NodePath("Label:position")
+tracks/0/path = NodePath("Label:rotation")
 tracks/0/interp = 1
 tracks/0/loop_wrap = true
 tracks/0/keys = {
 "times": PackedFloat32Array(0),
 "transitions": PackedFloat32Array(1),
 "update": 0,
-"values": [Vector2(1096, -160)]
+"values": [-3.64774]
 }
 tracks/1/type = "value"
 tracks/1/imported = false
 tracks/1/enabled = true
-tracks/1/path = NodePath("Label:rotation")
+tracks/1/path = NodePath("Label:position")
 tracks/1/interp = 1
 tracks/1/loop_wrap = true
 tracks/1/keys = {
 "times": PackedFloat32Array(0),
 "transitions": PackedFloat32Array(1),
 "update": 0,
-"values": [-3.64774]
+"values": [Vector2(1512, -160)]
 }
 
 [sub_resource type="Animation" id="Animation_cwodq"]
@@ -39,26 +39,26 @@ resource_name = "title_in"
 tracks/0/type = "value"
 tracks/0/imported = false
 tracks/0/enabled = true
-tracks/0/path = NodePath("Label:position")
+tracks/0/path = NodePath("Label:rotation")
 tracks/0/interp = 1
 tracks/0/loop_wrap = true
 tracks/0/keys = {
 "times": PackedFloat32Array(0, 1),
 "transitions": PackedFloat32Array(1, 1),
 "update": 0,
-"values": [Vector2(1096, -160), Vector2(430, 192)]
+"values": [-3.64774, 0.0]
 }
 tracks/1/type = "value"
 tracks/1/imported = false
 tracks/1/enabled = true
-tracks/1/path = NodePath("Label:rotation")
+tracks/1/path = NodePath("Label:position")
 tracks/1/interp = 1
 tracks/1/loop_wrap = true
 tracks/1/keys = {
 "times": PackedFloat32Array(0, 1),
 "transitions": PackedFloat32Array(1, 1),
 "update": 0,
-"values": [-3.64774, 0.0]
+"values": [Vector2(1512, -160), Vector2(654, 192)]
 }
 
 [sub_resource type="AnimationLibrary" id="AnimationLibrary_h8xhb"]
@@ -77,38 +77,52 @@ grow_vertical = 2
 script = ExtResource("1_qgnpm")
 
 [node name="Background" type="Sprite2D" parent="."]
-position = Vector2(576, 328)
-scale = Vector2(1.8, 1.36667)
+position = Vector2(800, 452)
+scale = Vector2(2.5, 1.88333)
 texture = ExtResource("2_j03ef")
 
 [node name="Hills" type="Sprite2D" parent="."]
-position = Vector2(1200, 424)
+position = Vector2(1240, 680)
 rotation = 3.14159
 scale = Vector2(1, -1)
 texture = ExtResource("3_5lsd6")
 
 [node name="Hills2" type="Sprite2D" parent="."]
-position = Vector2(296, 416)
+position = Vector2(336, 672)
+texture = ExtResource("3_5lsd6")
+
+[node name="Hills3" type="Sprite2D" parent="."]
+position = Vector2(792, 776)
 texture = ExtResource("3_5lsd6")
 
 [node name="PlayButton" type="Button" parent="."]
-layout_mode = 2
-offset_left = 555.0
-offset_top = 308.0
-offset_right = 596.0
-offset_bottom = 339.0
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -20.5
+offset_top = -15.5
+offset_right = 20.5
+offset_bottom = 15.5
+grow_horizontal = 2
+grow_vertical = 2
 text = "Play"
 
 [node name="Label" type="Label" parent="."]
 layout_mode = 1
-anchors_preset = 5
+anchors_preset = 8
 anchor_left = 0.5
+anchor_top = 0.5
 anchor_right = 0.5
+anchor_bottom = 0.5
 offset_left = -146.0
-offset_top = 192.0
+offset_top = -258.0
 offset_right = 146.0
-offset_bottom = 259.0
+offset_bottom = -191.0
 grow_horizontal = 2
+grow_vertical = 2
 rotation = -3.64774
 text = "Jewel Collect"
 label_settings = SubResource("LabelSettings_23lak")

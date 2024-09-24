@@ -14,6 +14,12 @@ config/name="E2-Platformer"
 run/main_scene="res://title_screen/title_screen.tscn"
 config/features=PackedStringArray("4.3", "Forward Plus")
 
+[display]
+
+window/size/viewport_width=1600
+window/size/viewport_height=900
+window/stretch/mode="canvas_items"
+
 [input]
 
 left={

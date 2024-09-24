@@ -7,6 +7,7 @@
 radius = 12.0416
 
 [node name="Jewel" type="Area2D"]
+texture_filter = 1
 script = ExtResource("1_fmors")
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
