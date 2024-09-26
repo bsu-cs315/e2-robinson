@@ -34,6 +34,11 @@ Has a version release.
 
 ## Revision Report
 
-- Removed the assets folder in compliance with the style guide. I thought an assets folder was permitted for assets relating to the main world, but I was mistaken. It has been resolved and I know for the future.
+Style Guide Error:
+
+- Removed the assets folder in compliance with the style guide. 
+- I thought an assets folder was permitted for assets relating to the main world, but I was mistaken. It has been resolved and I know for the future.
+
+Web Demo Error:
 
 - Web demo is now deployed off a separate branch instead of from the main branch alongside the project.
