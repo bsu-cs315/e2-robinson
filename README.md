@@ -36,4 +36,4 @@ Has a version release.
 
 - Removed the assets folder in compliance with the style guide. I thought an assets folder was permitted for assets relating to the main world, but I was mistaken. It has been resolved and I know for the future.
 
-- Web demo is now deployed off a separate branch instead of from the main branch alongside the project.
+- Web demo is now deployed off a separate branch instead of from the master branch alongside the project.
