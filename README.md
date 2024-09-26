@@ -31,3 +31,9 @@ The game doesn't produce any warnings or errors and complies with the style guid
 I have legal rights to use all assets incorporated.
 
 Has a version release.
+
+## Revision Report
+
+- Removed the assets folder in compliance with the style guide. I thought an assets folder was permitted for assets relating to the main world, but I was mistaken. It has been resolved and I know for the future.
+
+- Web demo is now deployed off a separate branch instead of from the main branch alongside the project.
