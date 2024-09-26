@@ -1,9 +1,9 @@
 [gd_scene load_steps=9 format=4 uid="uid://c13125k13ycox"]
 
-[ext_resource type="Texture2D" uid="uid://x1vr0pfufknm" path="res://assets/tilesheet_complete.png" id="1_womtf"]
+[ext_resource type="Texture2D" uid="uid://x1vr0pfufknm" path="res://tilesheet_complete.png" id="1_womtf"]
 [ext_resource type="PackedScene" uid="uid://bust4ctp8hydm" path="res://player/player.tscn" id="2_4ngpd"]
-[ext_resource type="Texture2D" uid="uid://dhlduwhigbks6" path="res://assets/set1_hills.png" id="2_07krc"]
-[ext_resource type="Texture2D" uid="uid://b4rrvu1lby4mu" path="res://assets/set2_background.png" id="2_jheyd"]
+[ext_resource type="Texture2D" uid="uid://dhlduwhigbks6" path="res://set1_hills.png" id="2_07krc"]
+[ext_resource type="Texture2D" uid="uid://b4rrvu1lby4mu" path="res://set2_background.png" id="2_jheyd"]
 [ext_resource type="PackedScene" uid="uid://rpf5l04vlvs1" path="res://jewel/jewel.tscn" id="5_or34m"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_v62an"]
