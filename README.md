@@ -41,4 +41,4 @@ Style Guide Error:
 
 Web Demo Error:
 
-- Web demo is now deployed off a separate branch instead of from the main branch alongside the project.
+- Web demo is now deployed off a separate branch instead of from the master branch alongside the project.
