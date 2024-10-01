@@ -5,16 +5,15 @@ const _SPEED := 300.0
 const _JUMP_VELOCITY := -700.0
 
 @export var score := 0
-
-var _dead := false
+@export var _score_label: Label
+@export var _status_label: Label
+@export var dead := false
 
 @onready var _sprite: AnimatedSprite2D = $AnimatedSprite2D
-@onready var _score_label: Label = $UI/Score
-@onready var _status_label: Label = $UI/Status
 
 
 func _physics_process(delta: float) -> void:
-	if _dead == false:
+	if dead == false:
 		# Add the gravity.
 		if not is_on_floor():
 			_sprite.play("jump")
@@ -46,9 +45,10 @@ func _physics_process(delta: float) -> void:
 
 # Set dead to true and reset the scene after 2 seconds
 func death_state():
-	_dead = true
+	dead = true
 	_sprite.play("dead")
 	_status_label.text = "You died!"
+	$AudioStreamPlayer2D.play()
 	await get_tree().create_timer(2).timeout
 	get_tree().reload_current_scene()
 

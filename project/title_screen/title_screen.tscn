@@ -1,8 +1,9 @@
-[gd_scene load_steps=8 format=3 uid="uid://cogkt373sg084"]
+[gd_scene load_steps=9 format=3 uid="uid://cogkt373sg084"]
 
 [ext_resource type="Script" path="res://title_screen/title_screen.gd" id="1_qgnpm"]
 [ext_resource type="Texture2D" uid="uid://b4rrvu1lby4mu" path="res://set2_background.png" id="2_j03ef"]
 [ext_resource type="Texture2D" uid="uid://dhlduwhigbks6" path="res://set1_hills.png" id="3_5lsd6"]
+[ext_resource type="AudioStream" uid="uid://jtsy6d80ec65" path="res://title_screen/title_music.wav" id="4_vtthk"]
 
 [sub_resource type="LabelSettings" id="LabelSettings_23lak"]
 font_size = 48
@@ -132,5 +133,10 @@ libraries = {
 "": SubResource("AnimationLibrary_h8xhb")
 }
 autoplay = "title_in"
+
+[node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource("4_vtthk")
+volume_db = 6.933
+autoplay = true
 
 [connection signal="pressed" from="PlayButton" to="." method="_on_play_button_pressed"]
