@@ -33,8 +33,8 @@ Death sound from [808BD_T1D7_X2wpo3.wav](https://freesound.org/people/bWpo/sound
 All essential goals for increment 2 are met with this project.
 
 There are 3 demonstrations of juice, including one that was partially added in the previous increment:
-- The jewels expand and emit particles when collected, inspired by the (Juice it or Lose it talk)[https://www.youtube.com/watch?v=Fy0aCDmgnxg].
+- The jewels expand and emit particles when collected, inspired by the [Juice it or Lose it talk](https://www.youtube.com/watch?v=Fy0aCDmgnxg).
 - The camera uses linear interpolation (lerp) to create an effect that makes movement feel more dynamic, inspired by an in-class demonstration.
-- The player flashes and briefly increases in size when collecting a jewel, also inspired by the (Juice it or Lose it talk)[https://www.youtube.com/watch?v=Fy0aCDmgnxg].
+- The player flashes and briefly increases in size when collecting a jewel, also inspired by the [Juice it or Lose it tal](https://www.youtube.com/watch?v=Fy0aCDmgnxg).
 
 Proper media implementation is also included, with background music, sound effects, and sprites for the player and environment.
