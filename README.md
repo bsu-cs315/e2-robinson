@@ -24,7 +24,7 @@ Title screen music from [HopeOfMay.wav](https://freesound.org/people/supervanz/s
 
 Gameplay music from [music.mp3](https://freesound.org/people/bsp7176/sounds/570634/) by [bsp7176](https://freesound.org/people/bsp7176/), licensed under [CC0](https://creativecommons.org/publicdomain/zero/1.0/).
 
-Death sound from [808BD_T1D7_X2wpo3.wav](https://freesound.org/people/bWpo/sounds/370657/) by [bWpo], licensed under [CC0](https://creativecommons.org/publicdomain/zero/1.0/).
+Death sound from [808BD_T1D7_X2wpo3.wav](https://freesound.org/people/bWpo/sounds/370657/) by [bWpo](https://freesound.org/people/bWpo/), licensed under [CC0](https://creativecommons.org/publicdomain/zero/1.0/).
 
 ## Report
 
