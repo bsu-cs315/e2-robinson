@@ -72,7 +72,7 @@ texture = ExtResource("2_jheyd")
 centered = false
 
 [node name="Hills" type="Parallax2D" parent="Background"]
-scroll_scale = Vector2(0.05, 0)
+scroll_scale = Vector2(0.1, 0)
 follow_viewport = false
 
 [node name="HillsSprite" type="Sprite2D" parent="Background/Hills"]

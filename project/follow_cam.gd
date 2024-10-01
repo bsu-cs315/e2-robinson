@@ -10,4 +10,4 @@ func _ready() -> void:
 
 
 func _physics_process(_delta: float) -> void:
-	global_position = lerp(global_position, target.global_position, .2)
+	global_position = lerp(global_position, target.global_position, .1)

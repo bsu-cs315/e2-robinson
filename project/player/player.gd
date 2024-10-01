@@ -53,12 +53,27 @@ func death_state():
 	get_tree().reload_current_scene()
 
 
+func power_up():
+	var i := 0
+	while i != 3:
+		_sprite.scale = Vector2(1.5,1.5)
+		_sprite.position.y -= 20
+		_sprite.modulate = Color.hex(0x00ffb7)
+		await get_tree().create_timer(.2).timeout
+		_sprite.scale = Vector2(1,1)
+		_sprite.position.y += 20
+		_sprite.modulate = Color.WHITE
+		await get_tree().create_timer(.2).timeout
+		i += 1
+
+
 func _on_death_area_body_entered(_body: Node2D) -> void:
 	death_state()
 
 
 func _on_jewel_add_score() -> void:
 	score += 1
+	power_up()
 	_score_label.text = "Jewels: " + str(score) + "/7"
 	if score == 7:
 		print("You Win!")
